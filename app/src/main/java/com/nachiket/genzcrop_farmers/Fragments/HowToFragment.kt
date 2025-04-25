@@ -68,7 +68,7 @@ class HowToFragment : Fragment() {
         // Initialize Gemini Flash 2.0
         generativeModel = GenerativeModel(
             modelName = "gemini-2.0-flash",
-            apiKey = "AIzaSyCUTqJVg1f9MxrfY5x46jUn36eKst_sBCQ"
+            apiKey = "//API KEY"
         )
 
         // Set up UI
