@@ -39,7 +39,7 @@ class AddCropActivity : AppCompatActivity() {
     private val generativeModel by lazy {
         GenerativeModel(
             modelName = "gemini-2.0-flash",
-            apiKey = "AIzaSyCUTqJVg1f9MxrfY5x46jUn36eKst_sBCQ"
+            apiKey = "//API KEY"
         )
     }
 
