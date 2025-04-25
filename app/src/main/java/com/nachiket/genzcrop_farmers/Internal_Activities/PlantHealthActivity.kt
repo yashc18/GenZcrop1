@@ -40,7 +40,7 @@ class PlantHealthActivity : AppCompatActivity() {
         private const val CAMERA_PERMISSION_CODE = 100
         private const val CAMERA_REQUEST_CODE = 101
         private const val GALLERY_REQUEST_CODE = 102
-        private const val API_KEY = "AIzaSyCUTqJVg1f9MxrfY5x46jUn36eKst_sBCQ"
+        private const val API_KEY = "//"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
