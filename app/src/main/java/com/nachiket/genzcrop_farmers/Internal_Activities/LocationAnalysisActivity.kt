@@ -34,7 +34,7 @@ class LocationAnalysisActivity : AppCompatActivity() {
     companion object {
         private const val CAMERA_REQUEST_CODE = 105
         private const val GALLERY_REQUEST_CODE = 106
-        private const val GEMINI_API_KEY = "AIzaSyCUTqJVg1f9MxrfY5x46jUn36eKst_sBCQ"
+        private const val GEMINI_API_KEY = "//API KEY"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
