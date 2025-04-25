@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Add crop"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:textStyle="bold"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cropNameEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Crop Name" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/varietyEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Variety" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/quantityEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Maximum Predicted Yeild (kg)"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/priceEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Price per KG"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/readyDateEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ready Date (DD/MM/YYYY)"
+                android:inputType="date" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:strokeWidth="1dp"
+            android:layout_marginTop="16dp"
+            app:strokeColor="#E0E0E0">
+
+
+            <ImageView
+                android:id="@+id/crop"
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                android:src="@drawable/sample_plant"
+                android:padding="10dp"
+                android:layout_marginBottom="45dp"/>
+
+
+            <Button
+                android:id="@+id/cropBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Crop Pictures"
+                android:layout_marginBottom="8dp"
+                android:padding="12dp"
+                android:backgroundTint="@color/theme_light"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="8dp"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+        <Button
+            android:id="@+id/saveCropBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/theme"
+            android:textColor="@color/black"
+            android:text="Save Crop" />
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Genzcrop_farmers</string>
+    <string name="FP">Forgot password?</string>
+    <string name="login">Farmer Login</string>
+    <string name="id">Farmer ID</string>
+    <string name="pass">Password</string>
+    <string name="log">Login</string>
+
+</resources>

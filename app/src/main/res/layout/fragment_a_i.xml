@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button_background"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AI Agricultural Analysis"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/theme_dark"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Plant Health Section -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/plantHealthCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:layout_constraintTop_toBottomOf="@id/titleText">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/plantHealthSection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plant Health Monitoring"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <ImageView
+                android:id="@+id/plantHealthImage"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="12dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/plant_health"
+                app:layout_constraintTop_toBottomOf="@id/plantHealthSection"/>
+
+            <Button
+                android:id="@+id/btnPlantHealth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Analyze Plant Health"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/theme_secondary"
+                app:layout_constraintTop_toBottomOf="@id/plantHealthImage"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Soil Analysis Section -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/soilAnalysisCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:layout_constraintTop_toBottomOf="@id/plantHealthCard">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/soilTestSection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Soil Analysis"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <ImageView
+                android:id="@+id/soilAnalysisImage"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="12dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/soil_test"
+                app:layout_constraintTop_toBottomOf="@id/soilTestSection"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="12dp"
+                app:layout_constraintTop_toBottomOf="@id/soilAnalysisImage">
+
+                <Button
+                    android:id="@+id/btnSoilTestReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Analyze with Soil Test Report"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/theme_secondary"/>
+
+                <Button
+                    android:id="@+id/btnSoilLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Analyze by Location"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/theme_secondary"/>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/soilAnalysisCard"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:padding="8dp"/>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

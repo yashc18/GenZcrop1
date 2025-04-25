@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#3D8FEF"/> <!-- The color of the rectangle --><!-- Optional: border of the rectangle -->
+    <!-- Optional: rounded corners -->
+    <size android:width="370px" android:height="75px"/> <!-- Optional: fixed size -->
+</shape>

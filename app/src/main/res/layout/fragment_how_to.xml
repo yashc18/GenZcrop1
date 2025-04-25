@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.HowToFragment">
+
+    <!-- Profile Icon in Top Right Corner -->
+    <ImageView
+        android:id="@+id/profileicon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="top|end"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_person"
+        android:contentDescription="Profile"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <!-- Verification Icon in Top Left Corner -->
+    <ImageView
+        android:id="@+id/verificationIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="top|start"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_verified"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <Spinner
+        android:id="@+id/languageSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="8dp"
+        android:padding="3dp" />
+
+    <!-- Chat RecyclerView -->
+
+    <!-- Input Layout for Chat -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="160dp"
+        android:padding="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_marginBottom="90dp"
+        android:padding="8dp"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/chatInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Type your message..."
+            android:inputType="text"
+            android:padding="12dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/borders_nornd"
+            android:maxLines="5" />
+
+        <ImageView
+            android:id="@+id/sendButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/send_btnn"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+</FrameLayout>

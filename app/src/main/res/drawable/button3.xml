@@ -1,0 +1,18 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+  <!-- Solid color fill -->
+  <solid android:color="#9EE766"/> <!-- Red color -->
+
+  <!-- Corner radius for rounded corners -->
+  <corners android:radius="10dp"/>
+
+  <!-- Optional stroke --><!-- Black stroke -->
+
+  <!-- Optional padding -->
+  <padding
+      android:left="4dp"
+      android:top="4dp"
+      android:right="4dp"
+      android:bottom="4dp"/>
+</shape>

@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "832159927337",
+    "firebase_url": "https://ezogreen-71c3a-default-rtdb.firebaseio.com",
+    "project_id": "ezogreen-71c3a",
+    "storage_bucket": "ezogreen-71c3a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832159927337:android:9a27a75ae84cc42b2ba038",
+        "android_client_info": {
+          "package_name": "com.genzopia.genzcrop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAg2sCCL7UeBVTQK2A90FqqI8adBstYhjY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832159927337:android:bcdddf75920aeacb2ba038",
+        "android_client_info": {
+          "package_name": "com.nachiket.genzcrop_farmers"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAg2sCCL7UeBVTQK2A90FqqI8adBstYhjY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
