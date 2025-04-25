@@ -37,7 +37,7 @@ class SoilTestActivity : AppCompatActivity() {
     companion object {
         private const val PDF_REQUEST_CODE = 103
         private const val IMAGE_REQUEST_CODE = 104
-        private const val API_KEY = "AIzaSyCUTqJVg1f9MxrfY5x46jUn36eKst_sBCQ"
+        private const val API_KEY = "//API KEY"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
